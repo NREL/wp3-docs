@@ -1,0 +1,41 @@
+.maincontainer{
+  margin-top: 0px;
+}
+
+form a{
+  padding-left: 20px;
+}
+
+.navbar > a,
+.navbar-nav > li  > a{
+  color: grey;
+}
+
+.fa {
+   font-size: 10px !important;
+}
+
+.Toolbar{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.input-group-btn.input-space {
+  padding-left: 15px;
+  float: left;
+  clear: both;
+}
+
+.input-group-message{
+  padding-left: 10px;
+  padding-right: 10px;
+  float: left;
+  line-height: 2.5;
+}
+
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td, .table-condensed>thead>tr>th {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

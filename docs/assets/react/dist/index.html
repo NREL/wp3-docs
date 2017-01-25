@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>PRUF Benchmarking</title>
+    <!-- <link href='bootstrap.css' rel='stylesheet' type='text/css'> -->
+    <link href='material.min.css' rel='stylesheet' type='text/css'>
+
+    <style>
+
+    /*.maincontainer{
+      margin-top: 60px;
+    }*/
+
+    form button{
+      margin-left: 10px;
+    }
+
+    .maincontainer{
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .logincontainer{
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .sparklines{
+      max-width: 750px;
+      max-height: 150px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+
+
+    </style>
+  </head>
+  <body>
+
+      <div class="container">
+          <div id='app'></div>
+      </div>
+    <script src="benchmarking.js"></script>
+    <script> benchmarking.app({'app': 'app',
+                               'baseurl': 'benchmarking' }); </script>
+
+
+    <script src="material.min.js"></script>
+
+  </body>
+</html>
