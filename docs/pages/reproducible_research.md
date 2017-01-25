@@ -5,10 +5,6 @@ permalink: reproducible
 group: navigation
 ---
 
-
-
-TODO: Add tidy data
-
 The goal of reproducible research is to make available
 the required environment, documentation, code, and data
 in a way that sufficiently allows another researcher
