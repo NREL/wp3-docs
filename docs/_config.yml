@@ -38,7 +38,7 @@ sass:
     sourcemap: false
 
 disqus:
-  shortname: wra-benchmark
+  shortname: wp3-docs
 
 # source:      src
 # destination: dist
