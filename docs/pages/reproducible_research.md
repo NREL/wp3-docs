@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Reproducible
+title: Reproducible Research
 permalink: reproducible
 group: navigation
 ---
 
-# Reproducible Research
+
 
 TODO: Add tidy data
 
