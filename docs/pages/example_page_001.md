@@ -1,12 +1,15 @@
 ---
 layout: page
 comments: true
-title: Example one  # <- you can change this
-permalink: example_one  # < - and this too
+title: Energy Yield Summary  # <- you can change this
+permalink: energy_yield_summary  # < - and this too
 group: pages
 ---
 
-This is a simple example page.
+Here is the information we are going to collect for the Energy Yield Summary.
 
-Fill me with content here 
-[https://github.com/NREL/wp3-docs/blob/master/docs/pages/example_page_001.md](https://github.com/NREL/wp3-docs/blob/master/docs/pages/example_page_001.md)
+Please tell us what you think about this:
+
+<img class="wra-image"
+     style="width: 700px"
+     src="{{ site.baseurl }}/assets/images/EnergyYieldSummary.png">
