@@ -1,3 +1,10 @@
+---
+layout: page
+title: Reproducible
+permalink: reproducible
+group: navigation
+--
+
 # Reproducible Research
 
 TODO: Add tidy data
