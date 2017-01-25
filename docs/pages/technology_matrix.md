@@ -6,7 +6,7 @@ group: navigation
 ---
 
 
-## Software
+#### Software
 
 | Software    | Package      | Version     | Notes     |
 | ----------- | ------------ | ----------- | --------- |
@@ -18,7 +18,7 @@ group: navigation
 | Jupyter     |              | | |
 | Parquet     |              | | |
 
-## Python Packages
+#### Python Packages
 
 | Package | Version | Notes |
 | ------- | ------- | ----- |
