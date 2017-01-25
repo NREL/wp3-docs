@@ -20,9 +20,9 @@
               {% for node in site.pages %}
                 {% if group == node.group %}
                   {% if page.title == node.title %}
-                  <a class="page-active mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title | escape }}</a>
+                  <a class="page-active mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.permalink| escape }}</a>
                   {% else %}
-                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a>
+                  <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.permalink }}</a>
                   {% endif %}
                 {% endif %}
               {% endfor %}
