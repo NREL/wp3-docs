@@ -3,7 +3,7 @@ layout: page
 title: Reproducible
 permalink: reproducible
 group: navigation
---
+---
 
 # Reproducible Research
 
