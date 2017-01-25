@@ -71,9 +71,9 @@ a img{
   overflow: visible;
   background-color: white;
   /*Monte*/
-  max-width: 900px;
+  /*max-width: 900px;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
 }
 
   .android-header .material-icons {
