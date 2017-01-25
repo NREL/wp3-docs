@@ -1,3 +1,11 @@
+---
+layout: page
+title: Technology matrix
+permalink: technology
+group: navigation
+---
+
+
 ## Software
 
 | Software    | Package      | Version     | Notes     |
@@ -17,4 +25,3 @@
 | Numpy   |         |       |
 | Pandas  |         |       |
 | Plotly  |         |       |
-
