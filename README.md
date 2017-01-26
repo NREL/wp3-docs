@@ -1,6 +1,5 @@
-documentation
-=============
+# wra-benchmark
+Prototype for wra-benchmark
 
-A repository for documentation related to the PRUF Benchmarking project.
+[website](https://mlunacek.github.io/wra-benchmark/)
 
-[Website](https://nrel.github.io/wp3-docs/)
