@@ -42,7 +42,7 @@ As input to the post construction analysis, we expect:
 
 The following schematic provides the working wind/power model which is used in the post construction analysis.
 
-![Wind/Power Model](https://github.nrel.gov/Benchmarking/documentation/raw/master/schematics/wind_power_model.jpg)
+![Wind/Power Model](/assets/schematics/wind_power_model.jpg)
 
 | Variable | Description                                                   |
 | -------- | ------------------------------------------------------------- |
