@@ -1,4 +1,12 @@
-## Software
+---
+layout: page
+title: Technology matrix
+permalink: technology
+group: navigation
+---
+
+
+#### Software
 
 | Software    | Package      | Version     | Notes     |
 | ----------- | ------------ | ----------- | --------- |
@@ -10,11 +18,10 @@
 | Jupyter     |              | | |
 | Parquet     |              | | |
 
-## Python Packages
+#### Python Packages
 
 | Package | Version | Notes |
 | ------- | ------- | ----- |
 | Numpy   |         |       |
 | Pandas  |         |       |
 | Plotly  |         |       |
-

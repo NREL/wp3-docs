@@ -1,6 +1,9 @@
-# Reproducible Research
-
-TODO: Add tidy data
+---
+layout: page
+title: Reproducible Research
+permalink: reproducible
+group: navigation
+---
 
 The goal of reproducible research is to make available
 the required environment, documentation, code, and data
