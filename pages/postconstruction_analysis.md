@@ -3,6 +3,7 @@ layout: page
 title: Postconstruction Analysis
 permalink: postcon
 group: navigation
+comments: true
 ---
 
 The post construction analysis is concerned with computing standard comparable quantities from operational SCADA data.

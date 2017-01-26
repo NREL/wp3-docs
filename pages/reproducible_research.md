@@ -3,6 +3,7 @@ layout: page
 title: Reproducible Research
 permalink: reproducible
 group: navigation
+comments: true
 ---
 
 The goal of reproducible research is to make available

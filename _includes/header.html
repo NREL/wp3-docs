@@ -1,6 +1,3 @@
-
-
-
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <div class="android-header mdl-layout__header mdl-layout__header--waterfall">
       <div class="mdl-layout__header-row">
@@ -51,21 +48,6 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-
-        <div class="android-drawer-separator"></div>
-        <span class="mdl-navigation__link" href="">pages</span>
-
-        {% assign group = 'pages' %}
-          {% for node in site.pages %}
-            {% if group == node.group %}
-              {% if page.title == node.title %}
-              <a class="page-active mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title | escape }}</a>
-              {% else %}
-              <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a>
-              {% endif %}
-            {% endif %}
-          {% endfor %}
-
 
       </nav>
     </div>

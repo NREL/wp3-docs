@@ -21,20 +21,3 @@ layout: default
      {% endif %}
    {% endfor %}
   </div>
-
-
-   <h4> Page Links </h4>
-    <div class="mdl-grid">
-   {% assign group = 'pages' %}
-     {% for node in site.pages %}
-       {% if group == node.group %}
-        <div class="mdl-cell mdl-cell--3-col">
-         {% if page.title == node.title %}
-         <a class=" page-link page-active mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title | escape }}</a>
-         {% else %}
-         <a class="page-link mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a>
-         {% endif %}
-         </div>
-       {% endif %}
-     {% endfor %}
-    </div>

@@ -3,6 +3,7 @@ layout: page
 title: Technology matrix
 permalink: technology
 group: navigation
+comments: true
 ---
 
 
