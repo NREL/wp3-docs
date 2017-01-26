@@ -10,7 +10,7 @@ The post construction analysis is concerned with computing standard comparable q
 
 ### Data Inputs
 
-As input to the post construction analysis, we expect:
+ls input to the post construction analysis, we expect:
 
   * Met towers/remote sensing (only if available)
     * Wind speed (m/s)
@@ -43,7 +43,7 @@ As input to the post construction analysis, we expect:
 
 The following schematic provides the working wind/power model which is used in the post construction analysis.
 
-![Wind/Power Model](/assets/schematics/wind_power_model.jpg)
+![Wind/Power Model]({{ site.url }}{{ site.baseurl }}/assets/schematics/wind_power_model.jpg)
 
 | Variable | Description                                                   |
 | -------- | ------------------------------------------------------------- |
