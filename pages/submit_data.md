@@ -12,8 +12,22 @@ The process for submitting data to the WP3 Benchmarking project differs dependin
 
 **Specifications**
 
-Preconstruction data, which 
-
+  * Turbine information
+    * Turbine model, rated capacity, hub height, rotor diameter
+    * Power curves (if available)
+  * Wind plant and turbine layout
+    * Roads and electrical infrastructure
+  * Raw meteorological data files and metadata
+    * Meteorological tower/device location, type, deployment duration
+    * 10-min raw data
+  * Pertinent contractual information (as it impacts WRA prediction)
+    * Turbine availability guarantee values
+    * Turbine power curve guarantee values
+    * Wind plant curtailment/interconnection guarantees
+  * Site and environmental characteristics
+    * Terrain information
+    * Land cover
+    
 **How to Submit**
 
 Preconstruction data should be submitted through the PNNL DAP:
@@ -63,9 +77,11 @@ As input to the post construction analysis, we expect:
   1. Contact Jason Fields (jason.fields@nrel.gov) to request access to the WP3 PNNL project
   1. Follow the instructions on the [WP3 DAP Project Page](https://a2e.energy.gov/projects/wp3) to upload data via SFTP\*
 
-### Energy Yield Assessments
+### Energy Yield Assessments (EYA)
 
 **Specifications**
+
+The format and fields for EYA submissions are documented on this website.
 
 **How to Submit**
 

@@ -8,7 +8,7 @@ permalink: /
 
 <div class="mdl-grid">
   <div class="mdl-cell mdl-cell--4-col">
-  <img src="{{ site.baseurl }}/assets/images/wind.png" class="img-responsive">
+  <img src="{{ site.baseurl }}/assets/images/wind_corn2.jpg" class="img-responsive">
   </div>
   <div class="mdl-cell mdl-cell--8-col">
   <p>
