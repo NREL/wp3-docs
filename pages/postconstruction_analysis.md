@@ -32,39 +32,6 @@ The following schematic provides the working wind/power model which is used in t
 | *L6*     | Electrical losses between the turbine and the point of revenue metering. |
 | P4       | The summer power for all turbines received at the point of revenue meter. |
 
-### Data Inputs
-
-As input to the post construction analysis, we expect:
-
-  * Met towers/remote sensing (only if available)
-    * Wind speed (m/s)
-    * Direction
-    * Temperature (optional)
-    * Pressure (optional)
-    * Humidity (optional)
-    * Vertical velocity (optional)
-  * Plant level Data
-    * Point of revenue meter
-      * Power Output (kW)  
-    * Curtailment logs 
-    * Asset Table (Turbine meta-data), including:
-      * Make
-      * Model
-      * Rated Power
-      * Latitude
-      * Longitude
-  * 10-min turbine level SCADA
-    * Nacelle Wind speed (provide documentation on the transfer function applied to the anemometer signal)
-    * Power Output
-    * Yaw direction (optional)
-    * Availability tags (status codes with documentation), including
-      * Online
-      * Offline
-      * Offline due to environment (optional)
-      * Offline due to curtailment (optional)
-
-
-
 ### Calculated Quantities
 
 The following quantities and statistics form the basis for comparison to pre-construction estimates:
