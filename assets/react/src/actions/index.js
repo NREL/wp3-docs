@@ -16,8 +16,8 @@ export const RESET_ERROR = "RESET_ERROR";
 
 const APP_RESET_URL = 'http://localhost:8000/#/reset';
 
-const API_URL = 'http://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
-const AUTH_URL = 'http://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
+const API_URL = 'https://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
+const AUTH_URL = 'https://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
 
 // const API_URL = 'http://localhost:5000';
 // const AUTH_URL = 'http://localhost:5000';

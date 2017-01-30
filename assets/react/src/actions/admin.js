@@ -1,7 +1,7 @@
 import axios from 'axios';
 import {browserHistory, hashHistory} from 'react-router';
 
-const ADMIN_URL = 'http://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
+const ADMIN_URL = 'https://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
 // const ADMIN_URL = 'http://localhost:5000';
 
 export const USERS_DATA = 'USERS_DATA';
