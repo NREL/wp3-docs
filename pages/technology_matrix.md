@@ -25,11 +25,3 @@ The WP3 Benchmarking data model is detailed in the following schematic. Observat
 | Hadoop      | Apache       | 2.7.3 | |
 | PostgreSQL  | PostgreSQL   | [9.3.10](https://www.postgresql.org/docs/current/static/release-9-3-10.html) | |
 | Git         | Git          | 1.9.5 | |
-
-### Python Packages
-
-| Package | Version | Notes |
-| ------- | ------- | ----- |
-| Numpy   |         |       |
-| Pandas  |         |       |
-| Plotly  |         |       |
