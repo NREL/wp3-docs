@@ -19,6 +19,12 @@
 
 }
 
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 #app{
   max-width: 800px;
   margin-left: auto;
