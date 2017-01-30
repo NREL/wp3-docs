@@ -49,6 +49,35 @@
             {% endif %}
           {% endfor %}
 
+          <div class="android-drawer-separator"></div>
+          <span class="mdl-navigation__link" href="">Links</span>
+
+      {% assign group = 'links' %}
+        {% for node in site.pages %}
+          {% if group == node.group %}
+            {% if page.title == node.title %}
+            <a class="page-active mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title | escape }}</a>
+            {% else %}
+            <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a>
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+
+              <div class="android-drawer-separator"></div>
+              <span class="mdl-navigation__link" href="">Meetings</span>
+
+          {% assign group = 'meetings' %}
+            {% for node in site.pages %}
+              {% if group == node.group %}
+                {% if page.title == node.title %}
+                <a class="page-active mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title | escape }}</a>
+                {% else %}
+                <a class="mdl-navigation__link mdl-typography--text-uppercase" href="{{ site.baseurl }}{{node.url}}">{{node.title}}</a>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+
       </nav>
     </div>
 
