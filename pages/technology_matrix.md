@@ -10,7 +10,13 @@ The WP3 Benchmarking data model is detailed in the following schematic. Observat
 
 ![Data System Model]({{ site.url }}{{ site.baseurl }}/assets/schematics/data_system_3.jpg)
 
-### Software
+### Software Repositories
+
+  * Postconstruction: https://github.com/NREL/wp3-postcon
+  * Preconstruction: https://github.com/NREL/wp3-precon
+  * Project Documentation: https://github.com/NREL/wp3-docs (this site)
+
+### Software Versions
 
 | Software    | Vendor       | Version     | Notes     |
 | ----------- | ------------ | ----------- | --------- |
