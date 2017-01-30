@@ -22,6 +22,6 @@ Additionally it is important to continue to reduce the Levelized Cost of Energy 
 
 As individual organizations, we can have a limited impact on this problem due to sample size and organizational risk. As a group, we can put a statistically significant number of projects in the hands of scientists that want to solve this problem of poor accuracy and high uncertainty.
 
-### Principal Investigator 
+### Principal Investigator
 
 Jason Fields

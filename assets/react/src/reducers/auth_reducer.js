@@ -16,7 +16,6 @@ export default function(state = INITIAL_STATE, action){
     case AUTH_ERROR:
       const tmp = merge({}, state, {'error': action.payload,
                                     'authenticated': false });
-      console.log(tmp);
       return tmp;
 
   }

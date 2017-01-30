@@ -45,9 +45,11 @@ class Reset extends Component{
         <form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 
           <Field name="password"
-                 type="password" 
-                 component={renderTextField}
-                 label="password"/>
+                 component={TextField}
+                 hintText="password"
+                 required
+                 floatingLabelText="password"
+                 type="password"/>
 
           <div>
             <RaisedButton style={{ marginTop: 50 }}

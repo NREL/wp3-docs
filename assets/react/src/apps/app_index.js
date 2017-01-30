@@ -13,10 +13,12 @@ import reducers from '../reducers';
 
 import App from '../components/app';
 import AppIndex from '../components/app_index';
-import FormIndex from '../components/form_index';
+import FormIndex from '../components/data/form_index';
+import UsersIndex from '../components/admin/users';
 import Signin from '../components/auth/signin';
 import Signout from '../components/auth/signout';
 import RequestReset from '../components/auth/request_reset';
+import RequestSent from '../components/auth/request_sent';
 import Reset from '../components/auth/reset';
 
 import {Loader} from "../components/loader";
@@ -65,8 +67,12 @@ function main(options){
           <Route path='/signin' component={Signin}/>
           <Route path='/signout' component={Signout}/>
           <Route path='/request' component={RequestReset}/>
+          <Route path='/request_sent' component={RequestSent}/>
+
           <Route path='/reset' component={Reset}/>
+
           <Route path='/loader' component={Loader}/>
+          <Route path='/admin' component={UsersIndex}/>
       </Router>
     </Provider>
       </MuiThemeProvider>,

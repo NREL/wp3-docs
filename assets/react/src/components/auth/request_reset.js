@@ -46,8 +46,6 @@ class RequestReset extends Component{
 
   authError(){
 
-    console.log(this.props.error_msg);
-
     if( this.props.error_msg !== null ){
       return this.props.error_msg
     }
@@ -58,13 +56,7 @@ class RequestReset extends Component{
 
     const { handleSubmit } = this.props;
     const auth_error = this.authError();
-    // const renderTextField = props => (
-    //     <TextField hintText={props.label}
-    //       floatingLabelText={props.label}
-    //       errorText={props.touched && props.error}
-    //       {...props}
-    //     />
-    //   )
+    // {this.renderSuccess.bind(this)()}
 
     return(
       <div className="logincontainer">
@@ -79,7 +71,7 @@ class RequestReset extends Component{
                  floatingLabelText="email"
                  type="text"/>
 
-          {this.renderSuccess.bind(this)()}
+
 
           <div>
           <RaisedButton style={{ marginTop: 50 }}
@@ -100,7 +92,7 @@ class RequestReset extends Component{
 function mapStateToProps(state, ownProps){
     // console.log(state.reset);
     // console.log(state.reset.error);
-    console.log(state.resetmsg.error_msg);
+    // console.log(state.resetmsg.error_msg);
 
     return { success_msg: state.resetmsg.success_msg,
              error_msg: state.resetmsg.error_msg };

@@ -14,12 +14,15 @@ export const AUTH_ERROR = 'AUTH_ERROR';
 export const RESET_SUCCESS = "RESET_SUCCESS";
 export const RESET_ERROR = "RESET_ERROR";
 
-const APP_URL = 'http://localhost:8000';
+const APP_RESET_URL = 'http://localhost:8000/#/reset';
 
-const API_URL = 'http://localhost:5000';
-const AUTH_URL = 'http://localhost:5000'
+const API_URL = 'http://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
+const AUTH_URL = 'http://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
 
-// const AUTH_URL = 'https://api.hpc.nrel.gov/esif/api/auth/login';
+// const API_URL = 'http://localhost:5000';
+// const AUTH_URL = 'http://localhost:5000';
+
+
 
 export function signoutUser(){
     const token = localStorage.getItem('TOKEN')
@@ -59,12 +62,14 @@ export function requestReset(props){
   return function(dispatch){
 
       const payload = {'email': props.email,
-                       'servername': APP_URL }
+                       'subject': 'Benchmarking request',
+                       'serverlink': `${APP_RESET_URL}` }
 
       axios.post(`${AUTH_URL}/api/reset`, payload)
         .then( (response)=>{
             dispatch({ type: RESET_SUCCESS,
                        payload: response.data.msg });
+            hashHistory.push('/request_sent');
         })
         .catch((error )=>{
 
@@ -177,9 +182,9 @@ export function postUpload(e){
 
     const token = localStorage.getItem('TOKEN')
     const username = localStorage.getItem('USERNAME')
-    fetch(`${API_URL}/api/upload?access_token=${token}`, {
+    fetch(`${API_URL}/api/upload`, {
           method: 'POST',
-          headers: {},
+          headers: {'Authorization': `access_token ${token}` },
           credentials: "include",
           body: formData,
         }).then( (response)=>{
@@ -202,13 +207,18 @@ export function postFormData(props){
   return function(dispatch){
     const token = localStorage.getItem('TOKEN')
     const username = localStorage.getItem('USERNAME')
-    fetch(`${API_URL}/api/template?access_token=${token}`, {
+    const body = {'access_token': token,
+                  'template': props }
+
+    console.log(body);
+
+    fetch(`${API_URL}/api/template`, {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
           credentials: "include",
-          body: JSON.stringify(props)
+          body: JSON.stringify(body)
         })
         .then( (response)=>{
           if(response.status !== 200){
@@ -216,7 +226,8 @@ export function postFormData(props){
           }
           console.log("response", response);
         })
-        .catch(()=>{
+        .catch((error)=>{
+            console.log(error);
             hashHistory.push('/signin');
         });
 
