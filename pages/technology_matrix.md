@@ -1,25 +1,26 @@
 ---
 layout: page
-title: Technology matrix
-permalink: technology
+title: Data System
+permalink: software
 group: navigation
 comments: true
 ---
 
+The WP3 Benchmarking data model is detailed in the following schematic. Observational (postconstruction) data are received through secure Globus file transfer, normalized and archived in a canonical form for analysis. Prediction (preconstruction) estimates are received from partners through our preconstruction API or template form. Pre and post-construction metrics are compared programatically using a standardized library and uniform software stack using reproducible research practics.
 
-#### Software
+![Data System Model]({{ site.url }}{{ site.baseurl }}/assets/schematics/data_system_3.jpg)
 
-| Software    | Package      | Version     | Notes     |
+### Software
+
+| Software    | Vendor       | Version     | Notes     |
 | ----------- | ------------ | ----------- | --------- |
-| Python      | Anaconda     | [4.2.0](https://www.continuum.io/downloads) | |
+| Python      | Anaconda     | [2.7.10](https://www.continuum.io/downloads) | |
 | Spark       | Apache       | [1.6.2](https://spark.apache.org/docs/1.6.2/) | |
-| PostgreSQL  |              | [9.3.10](https://www.postgresql.org/docs/current/static/release-9-3-10.html) | |
-| Hadoop      |              | | |
-| Git         |              | 1.9.5 | |
-| Jupyter     |              | | |
-| Parquet     |              | | |
+| Hadoop      | Apache       | 2.7.3 | |
+| PostgreSQL  | PostgreSQL   | [9.3.10](https://www.postgresql.org/docs/current/static/release-9-3-10.html) | |
+| Git         | Git          | 1.9.5 | |
 
-#### Python Packages
+### Python Packages
 
 | Package | Version | Notes |
 | ------- | ------- | ----- |
