@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { keys, get, flatten } from "lodash";
 import { bindActionCreators } from 'redux'
 import { Link } from 'react-router';
-import { uploadPng } from '../../images/upload.png'
 import { changeFormKey } from '../../actions/index';
 import { postFormData, postUpload } from '../../actions/index';
 import { getData, clearData } from '../../actions/index';
@@ -282,18 +281,6 @@ class FormIndex extends Component{
 
         <div className="maincontainer">
 
-            <table>
-              <thead>
-                 <tr>
-                    <th>Category</th>
-                    <th>loss %</th>
-                    <th></th>
-                    <th>Comments</th>
-                 </tr>
-              </thead>
-            </table>
-
-
             <Tabs>
             <TabList>
                 <Tab>Form</Tab>
@@ -302,6 +289,7 @@ class FormIndex extends Component{
 
           <TabPanel className="tabpanel">
             <div>
+
               <RaisedButton style={{ marginTop: 50, marginRight: 20 }}
                             onClick={this.onSubmit.bind(this)}
                             label="Submit"/>
@@ -330,11 +318,7 @@ class FormIndex extends Component{
 
             <TabPanel className="tabpanel">
                 <div>
-                <p className="uploadText">
-                  Please upload a comma separated values (csv) file the follows
-                  the following <a href="#">template</a>.
 
-                </p>
                   <input style={{display: 'none' }}
                          type='file'
                          ref='fileInput'
@@ -351,7 +335,13 @@ class FormIndex extends Component{
 
                    </div>
                    <div>
-
+                   <p className="uploadText">
+                      <h4>About the file</h4>
+                     Please upload a comma separated values (csv) file that has the folling
+                     fields:
+                     <img className = "img-responsive" src="https://nrel.github.io/wp3-docs/assets/images/upload.png"/>
+                     Each row contains information for a single turbine. You can use this <a href="https://nrel.github.io/wp3-docs/assets/downloads/example.csv">template</a> if you'd like.
+                   </p>
                    </div>
 
               </div>

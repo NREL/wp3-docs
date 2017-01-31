@@ -38,6 +38,13 @@ form a{
   word-wrap: break-word;
 }
 
+.img-responsive {
+    max-width: 100%;
+    margin: 10px;
+    height: auto;
+    display: block;
+}
+
 .Toolbar{
   margin-bottom: 10px;
   margin-top: 10px;
