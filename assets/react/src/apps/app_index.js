@@ -20,6 +20,7 @@ import Signout from '../components/auth/signout';
 import RequestReset from '../components/auth/request_reset';
 import RequestSent from '../components/auth/request_sent';
 import Reset from '../components/auth/reset';
+import APIKey from '../components/auth/apikey';
 
 import {Loader} from "../components/loader";
 
@@ -68,9 +69,8 @@ function main(options){
           <Route path='/signout' component={Signout}/>
           <Route path='/request' component={RequestReset}/>
           <Route path='/request_sent' component={RequestSent}/>
-
+          <Route path='/apikey' component={RequireAuth(APIKey)}/>
           <Route path='/reset' component={Reset}/>
-
           <Route path='/loader' component={Loader}/>
           <Route path='/admin' component={UsersIndex}/>
       </Router>

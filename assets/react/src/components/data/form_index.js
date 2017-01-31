@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import { keys, get, flatten } from "lodash";
 import { bindActionCreators } from 'redux'
 import { Link } from 'react-router';
-
+import { uploadPng } from '../../images/upload.png'
 import { changeFormKey } from '../../actions/index';
 import { postFormData, postUpload } from '../../actions/index';
 import { getData, clearData } from '../../actions/index';
@@ -282,6 +282,17 @@ class FormIndex extends Component{
 
         <div className="maincontainer">
 
+            <table>
+              <thead>
+                 <tr>
+                    <th>Category</th>
+                    <th>loss %</th>
+                    <th></th>
+                    <th>Comments</th>
+                 </tr>
+              </thead>
+            </table>
+
 
             <Tabs>
             <TabList>
@@ -289,13 +300,15 @@ class FormIndex extends Component{
                 <Tab>Upload</Tab>
             </TabList>
 
-            <TabPanel>
+          <TabPanel className="tabpanel">
             <div>
               <RaisedButton style={{ marginTop: 50, marginRight: 20 }}
                             onClick={this.onSubmit.bind(this)}
                             label="Submit"/>
 
               <Link className="btn btn-link" to="/signout">logout</Link>
+              <Link className="btn btn-link" to="/apikey">api key</Link>
+
             </div>
             {this.energyYieldSummary()}
             {this.availability()}
@@ -315,8 +328,13 @@ class FormIndex extends Component{
 
             </TabPanel>
 
-            <TabPanel>
+            <TabPanel className="tabpanel">
                 <div>
+                <p className="uploadText">
+                  Please upload a comma separated values (csv) file the follows
+                  the following <a href="#">template</a>.
+
+                </p>
                   <input style={{display: 'none' }}
                          type='file'
                          ref='fileInput'
@@ -328,6 +346,12 @@ class FormIndex extends Component{
                                    label="Upload"/>
 
                      <Link className="btn btn-link" to="/signout">logout</Link>
+
+                     <Link className="btn btn-link" to="/apikey">api key</Link>
+
+                   </div>
+                   <div>
+
                    </div>
 
               </div>

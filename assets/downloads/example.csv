@@ -1,0 +1,3 @@
+,Turbine ID,X,Y,Free Stream Wind Speed @ HH (m/s),Waked Wind Speed @ HH (m/s),Gross Yield (GWhr/yr),Wake Losses,Gross to Net Losses,Net Yield (GWhr/yr),Shear,Ambient Turbulence,Total Turbulence (including wake induced)
+0,T1,,,8.2,8.1,8.64,96.70%,84.20%,7.27,0.21,8.0%,9.20%
+2,T100,,,8.3,8.2,8.81,96.40%,84.00%,7.4,0.22,8.2%,9.10%

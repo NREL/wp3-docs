@@ -14,19 +14,20 @@ const paperStyle = {
     display: 'inline-block',
 };
 
-class Signout extends Component{
-
-  componentWillMount(){
-    this.props.dispatch(this.props.signoutUser());
-  }
+class APIKey extends Component{
 
   render(){
+
+    const token = localStorage.getItem('TOKEN');
+
     return (
-      <div className="logincontainer">
+      <div className="apicontainer">
           <Paper style={paperStyle}>
-          <h4>Success</h4>
-          <p> You are securely logged out!</p>
-          <Link className="btn btn-primary" to="/signin">login</Link>
+          <h4>API Key</h4>
+          <p className="apikey"> {token} </p>
+          <Link className="btn btn-primary" to="/template">template</Link>
+          <Link className="btn btn-primary" to="/signout">logout</Link>
+
         </Paper>
 
       </div>
@@ -39,8 +40,7 @@ function mapDispatchToProps(dispatch, ownProps){
 
   return {
     dispatch: dispatch,
-    signoutUser: signoutUser,
   }
 }
 
-export default connect( null, mapDispatchToProps )(Signout)
+export default connect( null, mapDispatchToProps )(APIKey)

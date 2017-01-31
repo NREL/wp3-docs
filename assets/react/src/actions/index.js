@@ -14,7 +14,7 @@ export const AUTH_ERROR = 'AUTH_ERROR';
 export const RESET_SUCCESS = "RESET_SUCCESS";
 export const RESET_ERROR = "RESET_ERROR";
 
-const APP_RESET_URL = 'http://localhost:8000/#/reset';
+const APP_RESET_URL = 'https://nrel.github.io/wp3-docs/precon#/reset';
 
 const API_URL = 'https://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
 const AUTH_URL = 'https://ec2-35-167-115-9.us-west-2.compute.amazonaws.com';
