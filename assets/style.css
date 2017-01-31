@@ -9,6 +9,12 @@
   margin-right: auto;
 }
 
+.notebook{
+  width: 100%;
+  min-height: 550px;
+  border: 0;
+}
+
 
 @media (max-width: 900px) {
 
