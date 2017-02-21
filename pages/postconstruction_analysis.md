@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Postconstruction Analysis
-permalink: postcon_analysis
+permalink: postcon
 group: links
 comments: true
 ---
