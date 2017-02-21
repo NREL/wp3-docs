@@ -1,8 +1,8 @@
 ---
 layout: page
 title: Postconstruction Analysis
-permalink: postcon
-group: navigation
+permalink: postcon_analysis
+group: links
 comments: true
 ---
 
@@ -16,7 +16,7 @@ The following schematic provides the working wind/power model which is used in t
 
 | Variable | Description                                                   |
 | -------- | ------------------------------------------------------------- |
-| *W0*     | Wind resource (m/s) in unobstructed environment (no turbines present). This cannot be measured in post-construction analysis. | 
+| *W0*     | Wind resource (m/s) in unobstructed environment (no turbines present). This cannot be measured in post-construction analysis. |
 | *P0*     | Theoretical potential power (kW) in unobstructed environment due to wind resource W0. This cannot be measured in post-construction analysis. |
 | *L0*     | Losses in power due to wakes from upwind turbines. This cannot be readily measured, but might be approximated through simulation. |
 | *W1*     | Wind resource directly in front of turbine, including interference from neighboring and upwind turbines and met towers. This cannot be directly measured, but can be approximated using W2 and the Nacelle transfer function. |
@@ -41,7 +41,7 @@ The following quantities and statistics form the basis for comparison to pre-con
 | M1    | Windspeed   | vector     | m/s       | Median of annual average wind speed as measured at each site reference met tower |    |
 | M2    | Windspeed   | vector     | m/s       | Standard deviation of annual average wind speed as measured at each site reference tower |    |
 | M3    | Energy      | vector     | MWh       | Median of annual per turbine gross energy, defined as the potential energy that was available according to the nacelle wind speed, converted to power using a fitted power curve |   |
-| M4    | Energy      | scalar     | MWh       | Median of annual site-level gross energy, defined as the sum of M3 values for each turbine for each year |   | 
+| M4    | Energy      | scalar     | MWh       | Median of annual site-level gross energy, defined as the sum of M3 values for each turbine for each year |   |
 | M5    | Losses      | scalar     | MWh       | Median of annual site-level energy losses between turbines and point of revenue. This is defined as the difference between the point of revenue metered energy and the total turbine produced energy (M4) during times the turbine is operating |   |
 | M6    | Energy      | scalar     | MWh       | Median of the annual site-level energy as measured at the point of revenue meter. |    |
 | M7    | Capacity    | vector     | %         | Median of the annual capacity factor (ratio between generated and rated power during times operating) for each turbine |  |
@@ -53,4 +53,3 @@ The following quantities and statistics form the basis for comparison to pre-con
 | M13   | Energy      | scalar     | MWh       | Median of summed potential (gross) energy at all turbines for years 1 to 10 |   |
 | M14   | Energy      | vector     | MWh       | Median of potential (gross) energy at each turbine for years 1 to 10 |   |
 | M15   | Energy      | scalar     | MWh       | Standard deviation of annual energy at point of revenue metering for years 1 to 20 |   |
-
