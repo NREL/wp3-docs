@@ -2,6 +2,7 @@
 layout: page
 title: Reproducible Research
 permalink: reproducible
+short: reproducible
 group: navigation
 comments: true
 ---

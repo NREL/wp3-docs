@@ -2,6 +2,7 @@
 layout: page
 title: How to Submit Data
 permalink: data
+short: data
 group: navigation
 comments: true
 ---
@@ -27,7 +28,7 @@ The process for submitting data to the WP3 Benchmarking project differs dependin
   * Site and environmental characteristics
     * Terrain information
     * Land cover
-    
+
 **How to Submit**
 
 Preconstruction data should be submitted through the PNNL DAP:
@@ -54,7 +55,7 @@ As input to the post construction analysis, we expect:
   * Plant level Data
     * Point of revenue meter
       * Power Output (kW)  
-    * Curtailment logs 
+    * Curtailment logs
     * Asset Table (Turbine meta-data), including:
       * Make
       * Model
@@ -70,7 +71,7 @@ As input to the post construction analysis, we expect:
       * Offline
       * Offline due to environment (optional)
       * Offline due to curtailment (optional)
-  
+
 **How to Submit**
 
   1. Register for an account on the [PNNL DAP Platform](https://a2e.energy.gov/auth/register)

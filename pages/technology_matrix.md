@@ -2,6 +2,7 @@
 layout: page
 title: Data System
 permalink: software
+short: software
 group: navigation
 comments: true
 ---

@@ -2,6 +2,7 @@
 layout: page
 title: About The Project
 permalink: about
+short: about
 group: navigation
 comments: true
 ---
