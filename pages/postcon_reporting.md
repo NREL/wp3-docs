@@ -3,7 +3,7 @@ layout: page
 title: Postconstruction Reporting
 short: postcon_rep
 permalink: postcon_rep
-group: navigation
+group: link
 comments: true
 ---
 
