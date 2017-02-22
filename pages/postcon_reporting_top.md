@@ -1,8 +1,19 @@
-The postconstruction reporting will follow the following path:
+---
+layout: page
+title: Postconstruction Reporting
+short: postcon_rep
+permalink: postcon_rep_top
+group: navigation
+comments: true
+---
 
-For each set of submitted data:
+The postconstruction reporting will include the following:
 
-1. Raw data analysis
-2. Windiness correction
+For each set of submitted data, for use only within the project:
+
+1. Raw data analysis results
+  1. Annual energy production by year
+  2. 
+2. Windiness correction results
 
 For all data together:
