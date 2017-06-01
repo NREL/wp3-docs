@@ -22,7 +22,6 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
         d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/r2.json", function(error, r2_data) {
           d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/table.json", function(error, table_data) {
 
-
       let colors = linkvis.encode_color(scatter_data, 'std', 0.85, 0.2);
       let sizes = linkvis.encode_size(scatter_data, 'r2', 0.1, 10);
       let color_year = linkvis.encode_color(scatter_data, 'cod',0.85, 0.2);
@@ -215,7 +214,7 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
 
 
 <!-- <div>
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="1200" height="800" src="http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/">
-lskjflskjdl
+<iframe frameborder="no"  style="display:block;" border="0" marginwidth="0" marginheight="0" width="1200" height="800" src="http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/">
+&nbsp;
 </iframe>
 </div> -->
