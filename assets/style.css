@@ -9,6 +9,12 @@
   margin-right: auto;
 }
 
+.wrapper-wide{
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .notebook{
   width: 100%;
   min-height: 550px;

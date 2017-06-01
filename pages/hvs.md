@@ -8,26 +8,30 @@ comments: true
 
 
 <div class="container">
-  <div id='app'></div>
+  <h3> HVS Analysis </h3>
+  <div id='graph'></div>
 </div>
 
 <script src="{{ site.baseurl }}/assets/hvs/d3.min.js"></script>
 <script src="{{ site.baseurl }}/assets/hvs/linkvis.js"></script>
+<script src="{{ site.baseurl }}/assets/hvs/p40scatter.json"></script>
+<script src="{{ site.baseurl }}/assets/hvs/p40scatter2.json"></script>
+<script src="{{ site.baseurl }}/assets/hvs/p50.json"></script>
+<script src="{{ site.baseurl }}/assets/hvs/cod.json"></script>
+
+<script src="{{ site.baseurl }}/assets/hvs/r2.json"></script>
+<script src="{{ site.baseurl }}/assets/hvs/table.json"></script>
+
 
 <script>
-d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/p40scatter.json", function(error, scatter_data) {
-  d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/p40scatter.json", function(error, scatter_data2) {
-    d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/p50.json", function(error, p50) {
-      d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/cod.json", function(error, cod_data) {
-        d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/r2.json", function(error, r2_data) {
-          d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/table.json", function(error, table_data) {
+
 
       let colors = linkvis.encode_color(scatter_data, 'std', 0.85, 0.2);
       let sizes = linkvis.encode_size(scatter_data, 'r2', 0.1, 10);
       let color_year = linkvis.encode_color(scatter_data, 'cod',0.85, 0.2);
 
-      const select = { kind: 'select' }
-      const cod_filter = {
+      var select = { kind: 'select' }
+      var cod_filter = {
                            'data': cod_data,
                            'kind': 'slider',
                            'name': 'slider_cod',
@@ -41,7 +45,7 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                                                  2016: 2016},
                                       'default': [2000,2017]},
                           }
-      const r2_filter = {
+      var r2_filter = {
                            'data': r2_data,
                            'kind': 'slider',
                            'name': 'slider_r2',
@@ -58,7 +62,7 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
 
         // Components
 
-        const hist = {
+        var hist = {
                         data: p50,
                         kind: 'histogram',
                         config: {'height': 250,
@@ -75,7 +79,7 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                         scale: 1,
                       }
 
-        const hist_legend = { data: colors,
+        var hist_legend = { data: colors,
                               config: {
                                   'width': 80,
                                   'height': 200,
@@ -89,7 +93,7 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                                              'bottom': 30}},
                               kind: "legend" }
 
-        const hist2 = {
+        var hist2 = {
                         data: p50,
                         kind: 'histogram',
                         config: {'height': 400,
@@ -104,9 +108,9 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                         color: colors,
                         size:  {},
                         scale: 1,
-                      }
+                      };
 
-        const scatter = {
+        var scatter = {
                           data: scatter_data,
                           kind: 'scatter',
                           config: {'height': 400,
@@ -124,9 +128,9 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                           color: color_year,
                           size: sizes,
                           scale: 1,
-                        }
+                        };
 
-        const scatter_legend = { data: color_year,
+        var scatter_legend = { data: color_year,
                               config: {
                                   'width': 80,
                                   'height': 200,
@@ -138,9 +142,9 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                                              'left': 10,
                                              'right': 50,
                                              'bottom': 30}},
-                              kind: "legend" }
+                              kind: "legend" };
 
-        const scatter_size_legend = { data: sizes,
+        var scatter_size_legend = { data: sizes,
                               config: {
                                   'width': 75,
                                   'height': 130,
@@ -152,9 +156,9 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                                              'left': 10,
                                              'right': 50,
                                              'bottom': 30}},
-                              kind: "legend" }
+                              kind: "legend" };
 
-        const scatter2 = {
+        var scatter2 = {
                           data: scatter_data2,
                           kind: 'scatter',
                           config: {'height': 400,
@@ -172,9 +176,9 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                           color: colors,
                           size: sizes,
                           scale: 3,
-                        }
+                        };
 
-        const table = {
+        var table = {
                         kind: 'table',
                         config: {'height': 400,
                                  'width': 300,
@@ -187,34 +191,12 @@ d3.json("http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723a
                                 },
                         data: table_data,
                         colors: colors,
-                      }
+                      };
 
-      // let data = [ select, cod_filter, r2_filter,
-      //              hist, scatter, table,
-      //            ];
-
-    //  let data = [ select, cod_filter, r2_filter, hist, hist2]
-      //
-      // let data = [ select, cod_filter, r2_filter,  hist, hist_legend,
-      //              scatter, scatter_legend, scatter_size_legend ]
-
-      let data = [ select, cod_filter, r2_filter, hist, hist_legend, scatter, scatter_legend, scatter_size_legend, table ]
-      // data = [scatter, scatter_legend, scatter_size_legend, table ]
+      let data = [ select, cod_filter, r2_filter, hist, hist_legend, scatter, scatter_legend, scatter_size_legend, table ];
 
       let app = new linkvis.TDSVis('uuid', 'graph');
       app.draw(data);
 
-            });
-          });
-        });
-      });
-    });
-  });
+
 </script>
-
-
-<!-- <div>
-<iframe frameborder="no"  style="display:block;" border="0" marginwidth="0" marginheight="0" width="1200" height="800" src="http://mlunacek.com/github/466635c723abf3b5f68807872c915edc/466635c723abf3b5f68807872c915edc/">
-&nbsp;
-</iframe>
-</div> -->
